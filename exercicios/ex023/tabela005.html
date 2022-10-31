@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        caption{
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 7.5px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td{
+            border: 2px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        col.nome{
+            background-color: aqua;
+        }
+        col.sexo{
+            background-color: red;
+        }
+        col.prof{
+            background-color: blue;
+        }
+    </style>
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Configurando colunas agrupadas</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo" span="2">
+            <col class="prof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Adestradora de Dinossauros</td>
+        </tr>
+        <tr>
+            <td>Flávio Grilo</td>
+            <td>M</td>
+            <td>17</td>
+            <td>Youtuber</td>
+        </tr>
+        <tr>
+            <td>Juliana Churros</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Cozinheira</td>
+        </tr>
+        <tr>
+            <td>Geraldo Alckmin</td>
+            <td>M</td>
+            <td>57</td>
+            <td>Merendeiro</td>
+        </tr>
+        <tr>
+            <td>Mercedes Beira</td>
+            <td>F</td>
+            <td>52</td>
+            <td>Mecânica</td>
+        </tr>
+        <tr>
+            <td>Pablo Boçal</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Streamer</td>
+        </tr>
+    </table>
+</body>
+</html>
